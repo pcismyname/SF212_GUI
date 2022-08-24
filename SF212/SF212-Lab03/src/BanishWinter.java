@@ -10,5 +10,51 @@ import stanford.karel.*;
 public class BanishWinter extends SuperKarel {
 
 	// You fill in this part
+	public void run() {
+		for(int i=0;i<4;i++){
+			nextTree();	
+			if(frontIsBlocked()) {
+				goUp();
+				drawLeavs();
+				goDown();
+			}
+				//break;
+		}
+	}
+	
+	private void nextTree() {
+		while(frontIsClear()) {
+			move();
+		}
+	}
+	
+	private void drawLeavs() {
+		turnRight();
+		drawLeaf();
+		move();
+	}
+	
+	private void drawLeaf() {
+		for(int i=0;i<4;i++) {
+			putBeeper();
+			move();
+			turnLeft();
+		}
+	}
+	
+	private void goUp() {
+		turnLeft();
+		while(rightIsBlocked()) {
+			move();
+		}
+	}
+	
+	private void goDown() {
+		turnRight();
+		while(frontIsClear()) {
+			move();
+		}
+		turnLeft();
+	}
 
 }
