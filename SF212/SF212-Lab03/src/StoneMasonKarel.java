@@ -1,4 +1,4 @@
-/*
+/* 6410742040 ªÔÉ³Ø¾§Èì à¾ç§ªÑÂ
  * File: StoneMasonKarel.java
  * --------------------------
  * The StoneMasonKarel subclass as it appears here does nothing.

@@ -1,4 +1,4 @@
-/*
+/* 6410742040 ªÔÉ³Ø¾§Èì à¾ç§ªÑÂ
  * File: BanishWinter.java
  * -----------------------
  * The BanishWinter subclass gets Karel adorn a series
