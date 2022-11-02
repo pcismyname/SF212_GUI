@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Bit {
+public class Ex20 {
 	//index  0123 
 	//bit    1100    deci 8+4 = 12  
 	//length  4
@@ -17,10 +17,10 @@ public class Bit {
 		return deci;
 	}
 	
-	
-	
-	
 	public static void main(String []args) {
-		System.out.println(bitToDeci("1100"));
+		
+		Scanner sc = new Scanner(System.in);
+		String bits = sc.nextLine();
+		System.out.println(bitToDeci(bits));
 	}
 }

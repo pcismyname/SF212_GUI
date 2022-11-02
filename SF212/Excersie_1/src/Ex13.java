@@ -10,6 +10,7 @@ public class Ex13 {
 		System.out.println("Find average");
 		double total = 0;
 		int c = 0;
+		
 		if(!file.hasNext()) {
 			System.out.println("No value in file");
 		}
@@ -18,10 +19,11 @@ public class Ex13 {
 			c++;
 		}
 		
-		while(file.hasNext() && c < 3) {
+		while(file.hasNext()) {
 			c++;
 			total+= file.nextDouble();
+			//System.out.println(c);
 		}
-		System.out.println(total);
+		System.out.println(total/c);
 	}
 }

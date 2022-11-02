@@ -11,9 +11,9 @@ public class Ex12 {
 		do {
 			System.out.println("Pleas value greate than 10");
 			num = sc.nextDouble();
-			result = Math.sqrt(result);
 		}
 		while(num <= 10);
+		
 		int count = 0;
 		while(num >= 1.01) {
 			num = Math.sqrt(num);
