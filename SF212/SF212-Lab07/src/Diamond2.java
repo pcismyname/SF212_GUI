@@ -18,6 +18,6 @@ public class Diamond2 extends GraphicsProgram {
     diamond.addEdge(-width / 2, height / 2);
     diamond.addEdge(-width / 2, -height / 2);
     return diamond;
-  }
+  }                                                                                                   
 
 }

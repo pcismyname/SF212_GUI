@@ -19,7 +19,7 @@ public class RubberBanding extends GraphicsProgram {
 	
     public void mousePressed(MouseEvent e) {
     	line = new GLine(e.getX(),e.getY(),e.getX(),e.getY());
-
+    	
     }
 
     /*

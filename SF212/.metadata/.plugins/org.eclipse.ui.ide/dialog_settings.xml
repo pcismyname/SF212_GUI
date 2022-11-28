@@ -8,6 +8,8 @@
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\chids\Downloads\SF212FinalPractice.zip"/>
+			<item value="C:\Users\chids\Downloads\SF212-Lab10.zip"/>
 			<item value="C:\Users\chids\Downloads\SF212-Lab09.zip"/>
 			<item value="C:\Users\chids\Downloads\Lab 8 Project Files.zip"/>
 			<item value="C:\Users\chids\Downloads\SF212-Lab07.zip"/>
@@ -36,6 +38,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\chids\OneDrive\Desktop\Java_Dictionary"/>
+			<item value="C:\Users\chids\OneDrive\Documents\Java_OOP"/>
 			<item value="C:\Users\chids\OneDrive\Desktop\SF211_OOP"/>
 			<item value="C:\Users\chids\Downloads\SF212-Lab04\SF212-Lab04"/>
 		</list>
