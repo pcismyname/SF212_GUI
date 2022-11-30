@@ -4,6 +4,7 @@ import java.awt.*;
 
 public class MyShapes extends GraphicsProgram {
 	public void run() {
+
 		/* Objects from GPolygon */
 		GStar star = new GStar(100);
 		star.setFilled(true);

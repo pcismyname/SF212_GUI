@@ -17,9 +17,9 @@
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="acm.graphics.GObject"/>
     <fullyQualifiedTypeName name="acm.graphics.GLabel"/>
-    <fullyQualifiedTypeName name="acm.graphics.GPolygon"/>
     <fullyQualifiedTypeName name="stanford.spl.GWindow_getScreenWidth"/>
-    <fullyQualifiedTypeName name="acm.program.GraphicsProgram"/>
     <fullyQualifiedTypeName name="acm.graphics.GPoint"/>
     <fullyQualifiedTypeName name="acm.graphics.GLine"/>
+    <fullyQualifiedTypeName name="acm.program.GraphicsProgram"/>
+    <fullyQualifiedTypeName name="acm.graphics.GPolygon"/>
 </qualifiedTypeNameHistroy>
