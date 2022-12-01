@@ -61,29 +61,14 @@ public class Breakout extends GraphicsProgram {
 
 	/** ball */
 	protected GOval ball;
-	protected Vector pos,vel;
+
 	/* Method: run() */
 	/** Runs the Breakout program. */
 	public void run() {
 	  setMaximumSize(new Dimension(APPLICATION_WIDTH, APPLICATION_WIDTH));
 		drawBricks();
-		drawPaddle();	
+		drawPaddle();
 		drawBall();
-		Thread t = new  Thread(new Runnable() {
-            @Override
-            public void run(){
-                while (true){
-                    try{
-                        Thread.sleep(20);
-                    } catch (Exception e) {}
-                    //ballMove();
-                    drawBall();
-
-                }
-            }
-
-        });
-		t.start();
 		//GLine line = new GLine(WIDTH/2, 0, WIDTH/2, HEIGHT);
 		//add(line);
 	}
@@ -115,54 +100,8 @@ public class Breakout extends GraphicsProgram {
 	}
 
 	protected void drawBall() {
-		pos = new Vector();
-		vel = new Vector();
-		pos = new Vector();
-        pos.setX((int) (Math.random() * 200 ));
-        pos.setY((int) (Math.random() * 200 + 250 ));
-        vel = new Vector();
-        vel.setX((int) (Math.random() * 20 -10));
-        vel.setY((int) (Math.random() * 20 - 10+5));
-		//pos.setX(WIDTH/2-BALL_RADIUS);
-		//pos.setY(HEIGHT/2-BALL_RADIUS);
-		ball = new GOval(pos.getX(),pos.getY(),BALL_RADIUS*2, BALL_RADIUS*2);
+		ball = new GOval(WIDTH/2-BALL_RADIUS,HEIGHT/2-BALL_RADIUS,BALL_RADIUS*2, BALL_RADIUS*2);
 		ball.setFilled(true);
 		add(ball);
 	}
-	
-	protected void ballMove() {
-		 pos = pos.add(vel);
-	        if(pos.getX() + BALL_RADIUS > WIDTH){
-	            pos.setX(800 - BALL_RADIUS);
-	            vel.setX(vel.getX() * - 1);
-	        }
-	        if(pos.getY() + BALL_RADIUS > HEIGHT){
-	            pos.setY(HEIGHT - BALL_RADIUS);
-	            vel.setY(vel.getY() * - 1);
-	        }
-	        if(pos.getX() - BALL_RADIUS < 0){
-	            pos.setX(0 + BALL_RADIUS);
-	            vel.setX(vel.getX () * - 1);
-	        }
-	        if(pos.getY() - BALL_RADIUS < 0){
-	            pos.setY( 0 + BALL_RADIUS);
-	            vel.setY(vel.getY() * - 1);
-	        }
-	    }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
