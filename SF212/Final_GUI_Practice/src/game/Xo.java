@@ -64,11 +64,13 @@ public class Xo extends GraphicsProgram {
 		}
 
 		else {
-			if (e.getX() < GAME_WIDTH && e.getY() < GAME_HEIGHT && turn % 2 == 0) {
+			if (e.getX() < GAME_WIDTH && e.getY() < GAME_HEIGHT && turn % 2 == 0
+					&& symbol[e.getX() / 100][e.getY() / 100] == '0') {
 				symbol[e.getX() / 100][e.getY() / 100] = 'X';
 				drawX(e.getX() / 100, e.getY() / 100);
 				turn++;
-			} else if (e.getX() < GAME_WIDTH && e.getY() < GAME_HEIGHT && turn % 2 != 0) {
+			} else if (e.getX() < GAME_WIDTH && e.getY() < GAME_HEIGHT && turn % 2 != 0
+					&& symbol[e.getX() / 100][e.getY() / 100] == '0') {
 				symbol[e.getX() / 100][e.getY() / 100] = 'O';
 				drawO(e.getX() / 100, e.getY() / 100);
 				turn++;
@@ -79,7 +81,6 @@ public class Xo extends GraphicsProgram {
 			else if (turn == 9) {
 				drawNoWinner();
 			}
-			System.out.println(game_state);
 		}
 
 	}
@@ -151,6 +152,7 @@ public class Xo extends GraphicsProgram {
 		x.setLocation(i * BOX_LENGTH + x.getBounds().getWidth() / 4,
 				j * BOX_LENGTH + x.getHeight() - x.getBounds().getHeight() / 3);
 		System.out.println(i + " " + j);
+		System.out.println(Arrays.deepToString(symbol));
 		add(x);
 
 	}
