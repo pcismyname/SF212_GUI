@@ -109,7 +109,7 @@ public class Pong extends GraphicsProgram {
 		
 		System.out.println();
 		
-		if(getElementAt(ball.getX()+BALL_RADIUS, ) != null)
+		if(getElementAt(ball.getX()+BALL_RADIUS, ball.getY()) != null)
 			return getElementAt(ball.getX()+BALL_RADIUS, ball.getY());
 		else if(getElementAt(ball.getX()+BALL_RADIUS, ball.getY()+BALL_RADIUS*2) != null)
 			return getElementAt(ball.getX()+BALL_RADIUS, ball.getY()+BALL_RADIUS*2);

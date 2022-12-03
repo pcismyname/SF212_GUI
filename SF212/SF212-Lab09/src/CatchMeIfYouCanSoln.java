@@ -29,7 +29,7 @@ public class CatchMeIfYouCanSoln extends GraphicsProgram {
 		addBlueSquare();
 		addDistractors();
 	}
-	
+	@Override
 	public void mouseMoved(MouseEvent e) {
 		GObject obj = getElementAt(e.getX(), e.getY());
 		if(obj == blueSquare) {

@@ -29,6 +29,7 @@ public class Q2 extends GraphicsProgram {
 	private GOval ball; // ball reference
 	private GRect paddle; // paddle reference
 	private GLabel scoreboard; // scoreboard reference
+	private GRect paddle_auto;
 	
 	private int scores = 0; // game scores
 	
@@ -53,6 +54,12 @@ public class Q2 extends GraphicsProgram {
 		int x = getWidth() /2;
 		int y = getHeight() - PADDLE_OFFSET-PADDLE_HEIGHT;
 		add(paddle,x,y);
+		
+		paddle_auto = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
+		paddle_auto.setFilled(true);
+		int x2 = getWidth() /2;
+		int y2 = 1+PADDLE_OFFSET-PADDLE_HEIGHT;
+		add(paddle_auto,x,y);
 	}
 	
 	public void mouseMoved(MouseEvent e) {
@@ -88,6 +95,8 @@ public class Q2 extends GraphicsProgram {
 		return (getElementAt(x, y) == paddle);
 	
 	}
+	
+	
 	
 	public boolean hitBottom() {
 		double y = ball.getY() + 2*RADIUS;
